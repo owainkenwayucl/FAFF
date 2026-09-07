@@ -38,7 +38,7 @@ body:
       placeholder: e.g. This form collects details of forms that Dr Kenway has been asked to fill out.
     validations:
       required: true
-  - type: textarea:
+  - type: textarea
     id: why
     attributes:
       label: Explain why you believe Dr Kenway needs to fill out the form.
