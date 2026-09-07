@@ -3,7 +3,7 @@ description: Submit a Form Approval Form Filing
 title: "[FAFF]: "
 body:
   - type: markdown
-    attribues:
+    attributes:
       value: |
         Please *clearly*, *succinctly* and *completely* describe the form that needs to be completed.
   - type: input
