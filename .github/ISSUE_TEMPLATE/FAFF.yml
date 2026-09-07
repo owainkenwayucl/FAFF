@@ -30,7 +30,7 @@ body:
       options:
         - label: I have checked and I have made the form accessible to Dr Kenway
           required: true
-  - type: textarea:
+  - type: textarea
     id: purpose
     attributes:
       label: Explain the purpose of the form.
