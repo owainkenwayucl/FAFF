@@ -1,0 +1,107 @@
+name: FAFF submission form
+description: Submit a Form Approval Form Filing
+title: "[FAFF]: "
+body:
+  - type: markdown
+    attribues:
+      value: |
+        Please *clearly*, *succinctly* and *completely* describe the form that needs to be completed.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How may you be contacted?
+      placeholder: e.g. email@example.com
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Form Location
+      description: Where may the form be found?
+      placeholder: e.g. http://example.com/form
+    validations:
+      required: true
+  - type: checkboxes
+    id: accessible
+    attributes:
+      label: Form Accessible
+      description: Please affirm that you have made the form accessible to Dr Kenway
+      options:
+        - label: I have checked and I have made the form accessible to Dr Kenway
+          required: true
+  - type: textarea:
+    id: purpose
+    attributes:
+      label: Explain the purpose of the form.
+      description: What is the purpose of this form?
+      placeholder: e.g. This form collects details of forms that Dr Kenway has been asked to fill out.
+    validations:
+      required: true
+  - type: textarea:
+    id: why
+    attributes:
+      label: Explain why you believe Dr Kenway needs to fill out the form.
+      description: Why do you think in this instance Dr Kenway needs to fill out the form?
+      placeholder: Dr Kenway needs to fill out this form because...
+    validations:
+      required: true
+  - type: input
+    id: duedate
+    attributes:
+      label: Date and time form is due by (YYYY-MM-DD HH:mm:SS)
+      description: When is the form formally due by?
+      placeholder: "2038-01-25 10:30:00"
+    validations:
+      required: true
+  - type: input
+    id: actualduedate
+    attributes:
+      label: "Date and time form is *actually* due by (YYYY-MM-DD HH:mm:SS)"
+      description: When is the form actually due by?
+      placeholder: "2038-02-25 10:30:00"
+    validations:
+      required: true
+  - type: textarea
+    id: consequencesucl
+    attributes:
+      label: Consequences of not completing the form on time (institional)
+      description: The consequences to the university or project of not completing the form on time.
+      placeholder: e.g. Without completing this form we cannot complete our financial forecast.
+    validations:
+      required: true
+  - type: textarea
+    id: consequencesdok
+    attributes:
+      label: Consequences of not completing the form on time (Dr Kenway)
+      description: The consequences to Dr Kenway of not completing the form on time.
+      placeholder: e.g. If Dr Kenway does not complete this form on time I will send him an email asking him to complete the form.
+    validations:
+      required: true
+  - type: input
+    id: tt
+    attributes:
+      label: Estimated time taken to complete this form (hours)
+      description: How long should this form take to complete?
+      placeholder: "7.3 hours"
+    validations:
+      required: true
+  - type: input
+    id: billing
+    attributes:
+      label: What account will Dr Kenway's time for completing this form be billed to? 
+      description: "Please provide the PTA. Note - project will be billed at spinal point 52. If this is work for an existing project this will likely incur no cost as that time is already paid for."
+      placeholder: P/T/A
+    validations:
+      required: true
+  - type: checkboxes
+    id: tos
+    attributes:
+      label: Accept terms of submission
+      description: Please affirm that all the information on this form is correct and that you accept that your project may be billed for this work. The SLA for forms submitted is 6-8 weeks.
+      options:
+        - label: I affirm
+          required: true
+
+
+
