@@ -65,7 +65,7 @@ body:
   - type: textarea
     id: consequencesucl
     attributes:
-      label: Consequences of not completing the form on time (institional)
+      label: Consequences of not completing the form on time (institutional)
       description: The consequences to the university or project of not completing the form on time.
       placeholder: e.g. Without completing this form we cannot complete our financial forecast.
     validations:
